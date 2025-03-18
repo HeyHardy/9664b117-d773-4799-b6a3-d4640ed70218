@@ -37,4 +37,4 @@ def get_input_args():
     print("Datei mit Hundenamen:", args.dogfile)
     return parser.parse_args()
 
-get_input_args()
+#get_input_args()
