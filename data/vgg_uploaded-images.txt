@@ -1,0 +1,83 @@
+result:
+{}
+Bilderverzeichnis: uploaded_images/
+Modellarchitektur: vgg
+Datei mit Hundenamen: dognames.txt
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:               audi_car_01.jpeg  label:                   audi car
+ 2 key:                    Dog_02.jpeg  label:                        dog
+ 3 key:                    Dog_01.jpeg  label:                        dog
+ 4 key:            brown_spider_01.jpg  label:               brown spider
+result:
+{'audi_car_01.jpeg': ['audi car', 'sports car, sport car', 0], 'Dog_02.jpeg': ['dog', 'doberman, doberman pinscher', 0], 'Dog_01.jpeg': ['dog', 'rottweiler', 0], 'brown_spider_01.jpg': ['brown spider', 'garden spider, aranea diademata', 0]}
+
+     MATCH:
+
+ NOT A MATCH:
+
+              audi_car_01.jpeg: 
+Real:                   audi car   Classifier:          sports car, sport car
+
+                   Dog_02.jpeg: 
+Real:                        dog   Classifier:    doberman, doberman pinscher
+
+                   Dog_01.jpeg: 
+Real:                        dog   Classifier:                     rottweiler
+
+           brown_spider_01.jpg: 
+Real:               brown spider   Classifier: garden spider, aranea diademata
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+     MATCH:
+
+ NOT A MATCH:
+
+              audi_car_01.jpeg: 
+Real:                   audi car   Classifier:          sports car, sport car  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                   Dog_02.jpeg: 
+Real:                        dog   Classifier:    doberman, doberman pinscher  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                   Dog_01.jpeg: 
+Real:                        dog   Classifier:                     rottweiler  
+PetLabelDog: 1  ClassLabelDog: 1
+
+           brown_spider_01.jpg: 
+Real:               brown spider   Classifier: garden spider, aranea diademata  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+ 
+pct_match: 0.0%
+pct_correct_dogs: 100.0%
+pct_correct_breed: 0.0%
+pct_correct_notdogs: 100.0%
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:    doberman, doberman pinscher
+Real:                        dog   Classifier:                     rottweiler
+
+** Total Elapsed Runtime: 0:59:50
