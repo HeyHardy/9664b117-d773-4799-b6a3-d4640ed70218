@@ -74,10 +74,6 @@ def main():
     #             classify_images(in_arg.dir, results, in_arg.arch)
     # Creates Classifier Labels with classifier function, Compares Labels, 
     # and adds these results to the results dictionary - results
-    if results is None:
-        print("Fehler: results ist None. Überprüfe die Funktion get_pet_labels.")
-        return 
-    
     classify_images(in_arg.dir, results, in_arg.arch)
 
     # Function that checks Results Dictionary using results    
